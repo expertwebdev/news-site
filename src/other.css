@@ -12,9 +12,17 @@
   align-items: center;
   display: none;
 }
+.tittle_h1{
+  padding: 2rem 0;
+  width: 100%;
+  text-align: center;
+  color: var(--light-color);
+  font-family: var(--prime-font);
+  font-size: 3rem;
+}
 .video_card {
-  width: 36rem;
-  height: 20rem;
+  width: 30rem;
+  height: 18rem;
   margin: 1rem;
   background: var(--faded-color);
   border-radius: 0.5rem;

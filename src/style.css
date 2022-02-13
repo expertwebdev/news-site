@@ -67,8 +67,8 @@ body {
 
 .img_header {
   background: var(--faded-color);
-  width: 36rem;
-  height: 30rem;
+  width: 34rem;
+  height: 24rem;
   border-radius: 1rem;
 }
 .text_header_demo {
@@ -87,7 +87,7 @@ body {
 }
 .text_header_demo p {
   font-size: 1.3rem;
-  word-break: break-all;
+  word-break: keep-all;
 }
 
 .container_news {
