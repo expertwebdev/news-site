@@ -108,21 +108,21 @@ body {
   overflow: hidden;
 }
 .news_card {
-  margin: 1.5rem 0;
+  /* margin: .5rem 0; */
   width: 100%;
   padding: 1rem;
   height: max-content;
-  border-radius: 0.5rem;
   display: flex;
   align-items: center;
-  box-shadow: 0.8rem 1.2rem 3.5rem var(--dark-color);
+  border-bottom: 1px solid;
+  /* box-shadow: 0.8rem 1.2rem 3.5rem var(--dark-color); */
 }
 
 .news_img {
   border-radius: 0.3rem;
   width: 20rem;
   max-width: 40%;
-  height: 18rem;
+  height: 12rem;
   background: var(--faded-color);
   animation: height-grow 0.5s linear;
 }
