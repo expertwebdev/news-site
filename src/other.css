@@ -21,12 +21,13 @@
   font-size: 3rem;
 }
 .video_card {
-  width: 30rem;
+  width: 32rem;
   height: 18rem;
   margin: 1rem;
   background: var(--faded-color);
   border-radius: 0.5rem;
   box-shadow: 0.5rem 1rem 3rem var(--dark-color);
+  animation: height-grow .5s linear;
 }
 
 .blog_page {
@@ -45,8 +46,8 @@
 }
 
 .blog_card {
-  padding: 1rem 2rem;
-  width: 38rem;
+  padding: 1rem;
+  width: 100%;
   height: 20rem;
   margin: 1rem;
   background: var(--light-color);
@@ -55,11 +56,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: height-grow .5s linear;
+}
+
+@keyframes height-grow {
+  0% {
+    opacity: 0%;
+    height: 0;
+  }
+  100% {
+    opacity: 100%;
+    height: 20rem;
+  }
 }
 
 .blog_img {
-  width: 80%;
-  height: 15rem;
+  width: 20rem;
+  height: 18rem;
   background: var(--faded-color);
 }
 
@@ -67,3 +80,49 @@
   background: var(--prime-color);
   width: 10rem;
 }
+
+.notification_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  position: absolute;
+  top: 15vh;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(var(--prime-color), var(--dark-color)) ;
+  display: none;
+  animation: slide-left 300ms linear;
+}
+
+@keyframes slide-left {
+  0%{
+    opacity: 0%;
+    transform: translateX(100%);
+  }
+  100%{
+    opacity: 100%;
+    transform: translateX(0%);
+  }
+}
+
+.notification_card {
+  width: 90%;
+  padding: 1.5rem;
+  background: var(--faded-color);
+  border-radius: 1rem;
+  box-shadow: .5rem .5rem 6rem;
+  height: max-content;
+  margin: 1rem;
+}
+.notification_tittle {
+  color: var(--dark-color);
+  font-size: 1.2rem;
+  font-family: var(--prime-font);
+}
+.notification_body{
+  font-family: var(--prime-font);
+  padding-top: .3rem;
+  font-size: 1.1rem;
+}
+

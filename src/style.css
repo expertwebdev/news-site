@@ -20,6 +20,14 @@ body {
   overflow-x: hidden;
 }
 
+#bellIcon {
+  position: absolute;
+  top: 2rem;
+  right: 2.4rem;
+  width: 2.4rem;
+  fill: var(--light-color);
+}
+
 .header {
   background: var(--dark-color);
   width: 100%;
@@ -70,6 +78,7 @@ body {
   width: 34rem;
   height: 24rem;
   border-radius: 1rem;
+  animation: height-grow 0.5s linear;
 }
 .text_header_demo {
   width: 70rem;
@@ -101,9 +110,9 @@ body {
 .news_card {
   margin: 1.5rem 0;
   width: 100%;
-  padding: 0.5rem;
-  height: 15rem;
-  border-radius: .5rem;
+  padding: 1rem;
+  height: max-content;
+  border-radius: 0.5rem;
   display: flex;
   align-items: center;
   box-shadow: 0.8rem 1.2rem 3.5rem var(--dark-color);
@@ -111,14 +120,17 @@ body {
 
 .news_img {
   border-radius: 0.3rem;
-  width: 30%;
-  height: 13rem;
+  width: 20rem;
+  max-width: 40%;
+  height: 18rem;
   background: var(--faded-color);
+  animation: height-grow 0.5s linear;
 }
 .news_content {
   color: var(--dark-color);
   font-family: var(--prime-font);
-  width: 70%;
+  width: fit-content;
+  margin-left: 1rem;
   padding: 0 1rem;
 }
 .read_more-btn {
@@ -134,16 +146,13 @@ body {
 }
 
 .footer_text {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--prime-font);
-    background: var(--dark-color);
-    color: var(--light-color);
-    height: 4rem;
-    font-size: 1.5rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--prime-font);
+  background: var(--dark-color);
+  color: var(--light-color);
+  height: 4rem;
+  font-size: 1.5rem;
 }
-
-
-

@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="src/other.css">
     <script src="src/script.js" defer></script>
     <!--AOS Animation-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" >
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
 <body>
     <header>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="bellIcon">
+            <path
+                d="M256 32V51.2C329 66.03 384 130.6 384 208V226.8C384 273.9 401.3 319.2 432.5 354.4L439.9 362.7C448.3 372.2 450.4 385.6 445.2 397.1C440 408.6 428.6 416 416 416H32C19.4 416 7.971 408.6 2.809 397.1C-2.353 385.6-.2883 372.2 8.084 362.7L15.5 354.4C46.74 319.2 64 273.9 64 226.8V208C64 130.6 118.1 66.03 192 51.2V32C192 14.33 206.3 0 224 0C241.7 0 256 14.33 256 32H256zM224 512C207 512 190.7 505.3 178.7 493.3C166.7 481.3 160 464.1 160 448H288C288 464.1 281.3 481.3 269.3 493.3C257.3 505.3 240.1 512 224 512z" />
+        </svg>
         <div class="header">
             <div class="branding">
                 <h2 class="logo">News Site</h2>
@@ -92,7 +96,18 @@
     <!--Blog Page-->
     <div class="blog_page">
         <h1 class="tittle_h1">Daily Articles</h1>
-        <div class="blog_card" data-aos="flip-right">
+        <div class="blog_card">
+            <div class="news_img blog_img"></div>
+            <div class="news_content blog_content">
+                <h2 id="blog1Tittle">Blog Tittle</h2>
+                <p id="blog1body">Lorem ipsum dolor sit, Laboriosam, voluptatem accusamus minima mollitia rem aperiam
+                    ad!
+                    laborum distinctio esse delectus? </p>
+                <input type="button" value="Read More" class="blog_btn read_more-btn">
+            </div>
+        </div>
+
+        <div class="blog_card">
             <div class="news_img blog_img"></div>
             <div class="news_content blog_content">
                 <h2>Blog Tittle</h2>
@@ -102,7 +117,7 @@
             </div>
         </div>
 
-        <div class="blog_card" data-aos="flip-right">
+        <div class="blog_card">
             <div class="news_img blog_img"></div>
             <div class="news_content blog_content">
                 <h2>Blog Tittle</h2>
@@ -112,17 +127,7 @@
             </div>
         </div>
 
-        <div class="blog_card" data-aos="flip-right">
-            <div class="news_img blog_img"></div>
-            <div class="news_content blog_content">
-                <h2>Blog Tittle</h2>
-                <p>Lorem ipsum dolor sit, Laboriosam, voluptatem accusamus minima mollitia rem aperiam ad!
-                    laborum distinctio esse delectus? </p>
-                <input type="button" value="Read More" class="blog_btn read_more-btn">
-            </div>
-        </div>
-
-        <div class="blog_card" data-aos="flip-right">
+        <div class="blog_card">
             <div class="news_img blog_img"></div>
             <div class="news_content blog_content">
                 <h2>Blog Tittle</h2>
@@ -136,23 +141,38 @@
     <!-- video Page -->
     <div class="video_page">
         <h1 class="tittle_h1">Youtube Videos</h1>
-        <div class="video_card" data-aos="slide-up" data-aos-offset="50"> 
-            <iframe width="300" height="180" src="https://www.youtube.com/embed/xcJtL7QggTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video_card">
+            <!-- <iframe width="320" height="180" src="https://www.youtube.com/embed/xcJtL7QggTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         </div>
-        <div class="video_card" data-aos=slide-upt" data-aos-offset="50">
-            <iframe width="300" height="180" src="https://www.youtube.com/embed/vQkXF5__TQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video_card">
+            <!-- <iframe width="320" height="180" src="https://www.youtube.com/embed/vQkXF5__TQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         </div>
-        <div class="video_card" data-aos="slide-up" data-aos-offset="50">
-            <iframe width="300" height="180" src="https://www.youtube.com/embed/1La4QzGeaaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video_card">
+            <!-- <iframe width="320" height="180" src="https://www.youtube.com/embed/1La4QzGeaaQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         </div>
-        <div class="video_card" data-aos="slide-up" data-aos-offset="50">
-            <iframe width="300" height="180" src="https://www.youtube.com/embed/bON-KPiiNCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video_card">
+            <!-- <iframe width="320" height="180" src="https://www.youtube.com/embed/bON-KPiiNCk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         </div>
-        <div class="video_card" data-aos="slide-up" data-aos-offset="50">
-            <iframe width="300" height="180" src="https://www.youtube.com/embed/AYDmsaiWY9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video_card">
+            <!-- <iframe width="320" height="180" src="https://www.youtube.com/embed/AYDmsaiWY9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         </div>
-        <div class="video_card" data-aos="slide-up" data-aos-offset="50">
-            <iframe width="300" height="180" src="https://www.youtube.com/embed/FcEVbVrNIyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video_card">
+            <!-- <iframe width="320" height="180" src="https://www.youtube.com/embed/FcEVbVrNIyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+    </div>
+
+    <div class="notification_menu">
+        <div class="notification_card">
+            <h2 class="notification_tittle">Notification Tittle</h2>
+            <p class="notification_body">This a random notification via server.</p>
+        </div>
+        <div class="notification_card">
+            <h2 class="notification_tittle">Notification Tittle</h2>
+            <p class="notification_body">This a random notification via server.</p>
+        </div>
+        <div class="notification_card">
+            <h2 class="notification_tittle">Notification Tittle</h2>
+            <p class="notification_body">This a random notification via server.</p>
         </div>
     </div>
 
