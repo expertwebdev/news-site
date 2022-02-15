@@ -78,7 +78,7 @@ body {
   width: 34rem;
   height: 24rem;
   border-radius: 1rem;
-  animation: height-grow 0.5s linear;
+  /* animation: height-grow 0.5s linear; */
 }
 .text_header_demo {
   width: 70rem;
@@ -125,6 +125,9 @@ body {
   height: 12rem;
   background: var(--faded-color);
   animation: height-grow 0.5s linear;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
 }
 .news_content {
   color: var(--dark-color);

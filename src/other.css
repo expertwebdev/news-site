@@ -48,9 +48,9 @@
 .blog_card {
   padding: 1rem;
   width: 100%;
-  height: 20rem;
+  height: 15rem;
   margin: 1rem;
-  background: var(--light-color);
+  background: #fff;
   border-radius: 0.5rem;
   box-shadow: 0.5rem 1rem 3rem var(--dark-color);
   display: flex;
@@ -72,7 +72,7 @@
 
 .blog_img {
   width: 20rem;
-  height: 18rem;
+  height: 13rem;
   background: var(--faded-color);
 }
 
