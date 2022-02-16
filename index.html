@@ -15,6 +15,10 @@
 </head>
 
 <body>
+    <div class="loader_page">
+        <h1 class="loader_text">Media House</h1>
+        <div class="loader"></div>
+    </div> 
     <header>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="bellIcon">
             <path
@@ -31,10 +35,13 @@
                     <li class="nav_list"><a href="#" class="nav_link" id="videoBtn">Videos</a></li>
                 </ul>
             </div>
+            <div class="load_site item_hidden"></div>
         </div>
 
         <div class="header_content">
-            <div class="img_header"></div>
+            <div class="img_header">
+                <img src="src/img/img1.png" alt="img" class="img_slider">
+            </div>
             <div class="text_header_demo">
                 <h2>Headline</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat inventore debitis quis tenetur
@@ -52,7 +59,7 @@
         <div class="container_news">
 
             <div class="news_card" data-aos="slide-up" data-aos-offset="120" data-aos-duration="1000">
-                <div class="news_img">
+                <div class="news_img" id="displayImage">
                 </div>
                 <div class="news_content">
                     <h2 id="n_tittle">Tittle</h2>

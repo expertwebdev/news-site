@@ -45,6 +45,27 @@
   display: none;
 }
 
+.load_site::before{
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 14.5vh;
+  left: 0;
+  border: 0.1rem solid var(--light-color);
+  animation: load-site 1s linear;
+}
+.item_hidden{
+  display: none;
+}
+@keyframes load-site{
+  0%{
+    width: 0%;
+  }
+  to{
+    width: 100%;
+  }
+}
+
 .blog_card {
   padding: 1rem;
   width: 100%;
@@ -66,7 +87,7 @@
   }
   100% {
     opacity: 100%;
-    height: 20rem;
+    height: 13rem;
   }
 }
 
