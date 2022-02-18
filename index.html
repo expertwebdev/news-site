@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="src/style.css">
     <link rel="stylesheet" href="src/other.css">
     <script src="src/script.js" defer></script>
+    <script src="src/api.js" defer></script>
     <!--AOS Animation-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -48,8 +49,8 @@
                 <img src="src/img/img1.png" alt="img" class="img_slider">
             </div>
             <div class="text_header_demo">
-                <h2>Headline</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat inventore debitis quis tenetur
+                <h2 id="bn_tittle">Headline</h2>
+                <p id="bn_body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat inventore debitis quis tenetur
                     repellendus fugit saepe praesentium magnam, rem earum, ex error. Repellendus veniam numquam vero
                     tenetur fuga nobis animi.
                     Quidem doloremque ipsa at dignissimos, fugit quo odio in soluta quaerat animi distinctio impedit
@@ -67,11 +68,10 @@
                 <div class="news_img" id="displayImage">
                 </div>
                 <div class="news_content">
-                    <h2 id="n_tittle">Tittle</h2>
                     <p id="n_body">Lorem ipsum dolor sit, Laboriosam, voluptatem accusamus minima mollitia rem aperiam
                         ad!
                         laborum distinctio esse delectus? </p>
-                    <input type="button" value="Read More" class="btn read_more-btn">
+                    <input type="button" value="Read More" class="btn read_more-btn" id="readMoreBtn">
                 </div>
             </div>
 
