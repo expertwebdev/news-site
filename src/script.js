@@ -1,6 +1,6 @@
 
 window.addEventListener("load", () => {
-    document.querySelector(".loader_page").style.display = "none";
+    // document.querySelector(".loader_page").style.display = "none";
     const headerContent = document.querySelector(".header_content");
     const mainBody = document.querySelector("main");
     const footer = document.querySelector("footer");
