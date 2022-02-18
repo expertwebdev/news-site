@@ -49,7 +49,7 @@
   content: "";
   width: 100%;
   position: absolute;
-  top: 14.5vh;
+  top: 0;
   left: 0;
   border: 0.1rem solid var(--light-color);
   animation: load-site 1s linear;
